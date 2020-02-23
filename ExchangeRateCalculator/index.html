@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Exchange Rate Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="title_container">
+      <div class="img_wrapper">
+        <i class="fa fa-money" aria-hidden="true" ></i>
+      </div>
+      <h3>Exchange Rate Calculator</h3>
+      <p> Choose the currency and the amount to get the exchange rate</p>
+    </div>
+    <div class="converter_container">
+      <div class="container_fromCurrency">
+        <select class="select_fromCurrency" id="select_fromCurrency">
+          <option value="USD" selected>USD</option>
+          <option value="INR">INR</option>
+          <option value="JPY">JPY</option>
+          <option value="ZAR">ZAR</option>
+        </select>
+        <input type="number" id="input_fromCurrency" class="input_fromCurrency"  value="1"/>
+      </div>
+      <div class="swap_container">
+        <button class="btn" id="swap"> Swap</button>
+        <h2 class="rate" id="rate"></h2>
+      </div>
+      <div class="container_toCurrency">
+        <select class="select_toCurrency" id="select_toCurrency">
+          <option value="USD">USD</option>
+          <option value="INR" selected>INR</option>
+          <option value="JPY">JPY</option>
+          <option value="ZAR">ZAR</option>
+        </select>
+        <h1  id="input_toCurrency" class="input_toCurrency">0.0</h1>
+      </div>
+    </div>
+  </div>
+  <script src="app.js">
+  </script>
+</body>
+
+</html>
