@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(73, 72, 72);
+}
+
+h1 {
+  color: #fff;
+  margin: 15px 0;
+}
+
+.screen {
+  background-color: black;
+  width: 70%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.controls {
+  box-sizing: border-box;
+  background-color: rgb(44, 41, 41);
+  display: flex;
+  width: 70%;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin: 5px;
+  font-size: 10px;
+}
+
+.btn .fa-play {
+  color: green;
+}
+
+.btn .fa-stop {
+  color: red;
+}
+
+.btn .fa-pause {
+  color: white;
+}
+.btn:focus {
+  outline: none;
+}
+
+.timestamp {
+  margin: 5px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+  .screen, .controls {
+    width: 90%;
+  }
+}
