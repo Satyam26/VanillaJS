@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Menu Slider and Modal</title>
+</head>
+
+<body>
+  <nav id="nav" class="nav">
+    <div class="img-wrapper">
+      <img id="avatar" class="avatar" src="https://randomuser.me/api/portraits/med/women/6.jpg" alt="avatar">
+    </div>
+    <div class="navLinkWrapper">
+      <button class="navlink">Home</button>
+      <button class="navlink">Contact</button>
+      <button class="navlink">Admin</button>
+      <button class="navlink">Users</button>
+    </div>
+  </nav>
+  <div class="container" id="container">
+    <div class="navicon" id="toggleBtn">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="heading">
+      <h2 class="title">My Landing Page</h2>
+      <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eos velit provident dicta voluptatibus optio.
+      </p>
+      <button class="btn" id="signupBtn"> Sign Up </button>
+    </div>
+    <div class="description">
+      <h3>What is this page about?</h4><br>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, sunt? Ipsum tempore quaerat cumque sed,
+        facere cupiditate possimus officia optio quas voluptatem necessitatibus ad suscipit quisquam. Mollitia, placeat?
+        Facilis quibusdam id dolorem reiciendis possimus odit maiores minima similique!</p><br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quae fuga aspernatur obcaecati quos harum ex rerum explicabo impedit quidem.</p><br>
+      <h3>Tell Me More</h4><br>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, aspernatur nisi. Placeat tenetur repudiandae amet accusamus omnis sunt consequuntur, reiciendis assumenda autem fugit perspiciatis sint ipsa excepturi, explicabo necessitatibus deserunt.</p><br>
+      <h3>Benefits</h4><br>
+      <ul>
+        <li>Lifetime Access</li>
+        <li>30 Day Money Back</li>
+        <li>Tailored Customer Support</li>
+      </ul><br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eligendi obcaecati quas provident laborum et est facilis iusto reprehenderit porro, blanditiis sint distinctio non ullam aspernatur fugiat similique? Nulla dignissimos itaque ratione placeat excepturi autem eaque quas inventore molestias ab.</p>
+    </div>
+  </div>
+  <div class="modalBackground" id="backdrop">
+  <div class="modal">
+    <div class="modalHead">
+      <h3>Sign Up</h3>
+      <i class="fa fa-times" id="close" aria-hidden="true"></i>
+    </div>
+    <div class="modalBody">
+      <form >
+        <label for="username">Username</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password"><br>
+        <label for="confirmpassword">Confirm Password</label><br>
+        <input type="password" id="confirmpassword" name="confirmpassword"><br>
+        <input type="submit" class="btn" value="Submit">
+      </form>
+    </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
